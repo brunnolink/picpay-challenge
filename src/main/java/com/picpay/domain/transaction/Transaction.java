@@ -1,6 +1,7 @@
 package com.picpay.domain.transaction;
 
 import com.picpay.domain.user.User;
+import com.picpay.dto.TransactionDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -26,4 +27,6 @@ public class Transaction {
     @JoinColumn(name="receiver_id")
     private User receiver;
     private LocalDateTime timestamp;
+
+
 }
